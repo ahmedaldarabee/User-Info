@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent {
+    background-color: #EEE;
+    width: 90%;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat(4 , 1fr);
+    padding: 10px;
+
+    gap: 10px;
+}
+
+.parent .ele-1 {
+    grid-column: span 2;
+}
+
+.ele-1 p:nth-child(2),
+.ele-2 p:nth-child(2),
+.ele-3 p:nth-child(2),
+.ele-4 p:nth-child(2),
+.ele-5 p:nth-child(2),
+.ele-6 p:nth-child(2),
+.ele-7 p:nth-child(2),
+.ele-8 p:nth-child(2),
+.ele-9 p:nth-child(2),
+.ele-10 p:nth-child(2) {
+    opacity: 0.5;
+}
+
+.parent .ele-1 p,
+.parent .ele-2 p, 
+.parent .ele-3 p,
+.parent .ele-4 p,
+.parent .ele-5 p,
+.parent .ele-6 p,
+.parent .ele-7 p,
+.parent .ele-8 p,
+.parent .ele-9 p,
+.parent .ele-10 p {
+    padding: 10px;
+}
+
+.bg-white {
+    background-color: white;
+    border-bottom: 2px solid red;
+    padding: 10px;
+}
+
+.bg-black {
+    background-color: rgb(0, 0, 0);
+    border-bottom: 2px solid red;
+    padding: 10px;
+    color: white;
+}
+
+.parent .ele-3 {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 3;    
+}
+
+.parent .ele-4 {
+    grid-column: span 1;
+    grid-row: span 2 / span 2;   
+}
+.parent .ele-5 {
+    grid-column: 2 / span 2;
+}
+.parent .ele-6 {
+    grid-column: 2 / span 2;
+    grid-row: 3 /span 1;
+}
+.parent .ele-7 {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+}
